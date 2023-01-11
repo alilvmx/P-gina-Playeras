@@ -1,0 +1,97 @@
+:root {
+    --primario: #030759;
+    --pimarioOscuro: #020540;
+    --secundario: #A136BF;
+    --secundarioOscuro: #4B1C8C;
+    --colorExtra: #05F2DB;
+    --blanco: #fff;
+    --negro: #000;
+
+    --font-family: 'Staatliches', cursive;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+/** Globales **/
+
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.header__front{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+.navegacion__enlace{
+    text-decoration: none;
+    color: var(--blanco);
+     transition: background-color .5s;
+ }
+ 
+ a:hover {
+    color: var(--secundario);
+  }
+
+.navegador{
+    background-color: var(--pimarioOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size:40px;
+    margin-top: 3rem;
+
+}
+
+h1{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--colorExtra);
+}
+
+.grid{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+        margin-left: 10rem;
+    }
+  
+}
+
+
+
+.producto__informacion{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.UNO{
+    background-color: black;
+    width: 50%;
+}
